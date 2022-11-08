@@ -3,7 +3,7 @@
     {
       "name": "FindFile",
       "setup": "",
-      "run": "find . -name \"Test*.java\" | grep Test",
+      "run": "if find . -type f -name \"Test*.java\" -exec false {} +;  then      echo 'Test file not found'   exit 1 fi   #if [ -f \"$FILE\" ]; then #    echo \"$FILE exists.\" #fi  # for every Test*.java for testfile in `find . -name \"Test*.java\"`; do    # get directory name   dirfile=`dirname $testfile`   # name of the class file to look for (example: Circle.java for TestCircle.java)   classfile=`echo $testfile| sed -n -e 's/^.*Test//p'`   # check if the file exists (in the same directory)   # find . -wholename $dirfile/$classfile | grep $classfile   if find . -type f -wholename $dirfile/$classfile  -exec false {} +;    then        echo 'Class file not found'     exit 1   fi  done",
       "input": "",
       "output": "",
       "comparison": "included",
