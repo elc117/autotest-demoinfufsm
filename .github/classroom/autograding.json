@@ -2,8 +2,8 @@
   "tests": [
     {
       "name": "FindFile",
-      "setup": "",
-      "run": "if find . -type f -name \"Test*.java\" -exec false {} +;  then      echo 'Test file not found'   exit 1 fi   #if [ -f \"$FILE\" ]; then #    echo \"$FILE exists.\" #fi  # for every Test*.java for testfile in `find . -name \"Test*.java\"`; do    # get directory name   dirfile=`dirname $testfile`   # name of the class file to look for (example: Circle.java for TestCircle.java)   classfile=`echo $testfile| sed -n -e 's/^.*Test//p'`   # check if the file exists (in the same directory)   # find . -wholename $dirfile/$classfile | grep $classfile   if find . -type f -wholename $dirfile/$classfile  -exec false {} +;    then        echo 'Class file not found'     exit 1   fi  done",
+      "setup": "wget https://gist.githubusercontent.com/AndreaInfUFSM/2712be413aba8cd282c502f70b855282/raw/3b2f3bc39c92c0fe5a43f11b0087499a7bad1a47/autotest-java02.sh",
+      "run": "bash autotest-java02.sh",
       "input": "",
       "output": "",
       "comparison": "included",
