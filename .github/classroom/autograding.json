@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "FindFile",
+      "setup": "",
+      "run": "find . -name \"Test*.java\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
