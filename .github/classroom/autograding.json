@@ -3,7 +3,7 @@
     {
       "name": "FindFile",
       "setup": "",
-      "run": "randomcommand",
+      "run": "find . -name \"Test*.java\" | grep Test",
       "input": "",
       "output": "",
       "comparison": "included",
