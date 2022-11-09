@@ -2,8 +2,8 @@
   "tests": [
     {
       "name": "FindFile",
-      "setup": "wget https://gist.githubusercontent.com/AndreaInfUFSM/2712be413aba8cd282c502f70b855282/raw/3b2f3bc39c92c0fe5a43f11b0087499a7bad1a47/autotest-java02.sh",
-      "run": "bash autotest-java02.sh",
+      "setup": "wget https://raw.githubusercontent.com/AndreaInfUFSM/elc117-2022b/main/praticas/java10/etc/autocheck-java10.sh",
+      "run": "bash autotest-java10.sh",
       "input": "",
       "output": "",
       "comparison": "included",
