@@ -2,8 +2,8 @@
   "tests": [
     {
       "name": "FindFiles",
-      "setup": "wget https://raw.githubusercontent.com/AndreaInfUFSM/elc117-2022b/main/praticas/java10/etc/autocheck-java10.sh",
-      "run": "bash autocheck-java10.sh",
+      "setup": "wget https://raw.githubusercontent.com/AndreaInfUFSM/elc117-2022b/main/praticas/java09/instructions/etc/autocheck-java09.sh",
+      "run": "bash autocheck-java09.sh",
       "input": "",
       "output": "",
       "comparison": "included",
